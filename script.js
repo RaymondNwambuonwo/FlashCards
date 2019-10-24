@@ -1,42 +1,49 @@
 let back = document.querySelector(".back-face")
 let front = document.querySelector(".front-face")
-let question = document.querySelector(".q")
+let q = document.querySelector(".q")
 let answer = document.querySelector(".a")
 let card = document.querySelector(".card")
-
+let previous = document.querySelector("#previous")
+let next = document.querySelector("#next")
+let question = document.querySelector("#question")
 let i = 0
 
-front.style.background = "url(Images/tupac.jpg)"
+// front.style.background = "url(Images/tupac.jpg)"
 
-let people = { 
-    "tupac": "Tupac Shakur",
-    "nas": "Nasir Jones",
-    "ti": "Tip Harris",
-    "biggie": "Notorious Big",
-    "drake": "Drake",
-    "eminem": "Eminem",
-    "jayz": "Jay Z",
-    "migos": "Migos",
-    "future": "Future",
-}
+let people = [
+    ["Tupac", "Who is this artist?", "Images/tupac.jpg"],
+    ["Nas", "This artist sold 1 million", "Images/Nas.jpg"],
+    ["Biggie", "Notorious Big", "Images/Biggie.jpg"],
+    ["Drake", "Drake", "Images/drake.jpg"],
+    ["Eminem", "Eminem", "Images/eminem.jpg"],
+    ["Jay Z", "Jay Z", "Images/jayz.jpg"],
+    ["lil Wayne", "Lil Wayne", "Images/lilwayne.jpg"],
+    ["Big L", "Big L", "Images/bigL.jpg"]
+]
 
-let peopleFace = {
-    imgFile: "/Images/tupac.jpg",
-    imgFile2: "/Images/drake.jpg",
-}
+q.innerText = people[i][0]
+question.textContent = people[i][1]
+front.style.background = "url("+people[i][2]+") no-repeat"
+front.style.backgroundSize = "100% 100%"
+next.addEventListener("click", function(evt){
+    evt.preventDefault
+    i++
+    q.innerText = people[i][0]
+    question.textContent = people[i][1]
+    front.style.background = "url("+people[i][2]+") no-repeat"
+    front.style.backgroundSize = "100% 100%"
+})
 
-person = Object.entries(people)
-// faces = Object.entries(peopleFace)
-question.innerText = person[i][0]
-answer.textContent = person[i][1]
+previous.addEventListener("click", function(evt){
+    evt.preventDefault
+    i--
+    q.innerText = people[i][0]
+    question.textContent = people[i][1]
+    front.style.background = "url("+people[i][2]+") no-repeat"
+    front.style.backgroundSize = "100% 100%"
+})
 
 card.addEventListener("click", function(evt){
 back.classList.toggle("hidden")
 front.classList.toggle("hidden")
-console.log(person)
 })
-
-// card.addEventListener("click", function(evt){
-//     front.classList.toggle("hidden")
-//     console.log(person)
-// })
