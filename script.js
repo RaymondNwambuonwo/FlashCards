@@ -11,7 +11,7 @@ let i = 0
 // front.style.background = "url(Images/tupac.jpg)"
 
 let people = [
-    ["Tupac", "Who is this artist?", "Images/tupac.jpg"],
+    ["Tupac", "This artist was a major Hip-Hop figure in the 1990's. He has created some of the most impactful songs to date with subject matter ranging from oppression, teen pregnancy, poverty, and even braggadocious songs. He was found to be very controversial and referred to as infamous due to the events he was involved in and surrounded by.?", "Images/tupac.jpg"],
     ["Nas", "This artist sold 1 million", "Images/Nas.jpg"],
     ["Biggie", "Notorious Big", "Images/Biggie.jpg"],
     ["Drake", "Drake", "Images/drake.jpg"],
@@ -20,6 +20,15 @@ let people = [
     ["lil Wayne", "Lil Wayne", "Images/lilwayne.jpg"],
     ["Big L", "Big L", "Images/bigL.jpg"]
 ]
+
+// Need and input box
+//player inputs selection
+//store selection value
+//  compare stored value to people[i][0]
+// if stored value =  people[0] answer = correct
+    //else answer = wrong
+
+
 
 q.innerText = people[i][0]
 question.textContent = people[i][1]
@@ -47,3 +56,17 @@ card.addEventListener("click", function(evt){
 back.classList.toggle("hidden")
 front.classList.toggle("hidden")
 })
+
+let answerInput = document.querySelector('.typedAnswer')
+console.log(answerInput.value)
+
+
+function validateAnswer() {
+    let userAnswer = document.forms["rappersName"].value;
+    if (userAnswer == people[i]) {
+        alert("You are Correct!")
+    }
+    else (userAnswer !== people[i]); {
+        alert("Maybe you should try again")
+    }
+}

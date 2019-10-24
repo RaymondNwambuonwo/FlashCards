@@ -49,3 +49,7 @@ justify-content: center;
 text-align: center;
 width: 100%;
 }
+
+#question {
+    text-align: center;
+}
