@@ -19,8 +19,23 @@ body {
     display: none;
 }
 
+.button {
+display: flex;
+}
 
 .card {
     border: 1px solid black;
     height: 300px;
+    width: 500px;
+    position: relative;
+    display: flex;
+}
+
+.front-face {
+   background-size: cover;
+   width: 100%;
+}
+
+.back-face {
+
 }

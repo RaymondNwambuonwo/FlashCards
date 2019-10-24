@@ -6,7 +6,7 @@ let card = document.querySelector(".card")
 
 let i = 0
 
-
+front.style.background = "url(Images/tupac.jpg)"
 
 let people = { 
     "tupac": "Tupac Shakur",
@@ -20,16 +20,23 @@ let people = {
     "future": "Future",
 }
 
+let peopleFace = {
+    imgFile: "/Images/tupac.jpg",
+    imgFile2: "/Images/drake.jpg",
+}
+
 person = Object.entries(people)
+// faces = Object.entries(peopleFace)
 question.innerText = person[i][0]
 answer.textContent = person[i][1]
 
 card.addEventListener("click", function(evt){
 back.classList.toggle("hidden")
+front.classList.toggle("hidden")
 console.log(person)
 })
 
-card.addEventListener("click", function(evt){
-    front.classList.toggle("hidden")
-    console.log(person)
-    })
+// card.addEventListener("click", function(evt){
+//     front.classList.toggle("hidden")
+//     console.log(person)
+// })
