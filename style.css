@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: radial-gradient(lightgrey, coral) /*the radial gradient allows for a blend of colors for background*/
+    background: radial-gradient(lightgrey, tan) /*the radial gradient allows for a blend of colors for background*/
 } 
 
 .game-container {
@@ -13,4 +13,14 @@ body {
     width: 550px; */
     margin: auto;
     justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.card {
+    border: 1px solid black;
+    height: 300px;
 }
