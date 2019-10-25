@@ -31,3 +31,4 @@ When contributing to this repository, please first discuss the change you wish t
 Thank you to: 
 - Roger Campbell II for the help and motivation.
 - Blake Hearn for the help and motivation.
+- Joe Tully for the help and motivation.
