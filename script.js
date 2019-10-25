@@ -10,7 +10,6 @@ let i = 0
 let score = 0
 let track = document.querySelector("h4")
 
-// front.style.background = "url(Images/tupac.jpg)"
 
 let people = [
     ["Tupac", "This artist was a major Hip-Hop figure in the 1990's. He has created some of the most impactful songs to date with subject matter ranging from oppression, teen pregnancy, poverty, and even the occasional braggadocious songs. He was found to be very controversial and at times referred to as infamous due to the events he was involved in and surrounded by. A legend in his own right, who is this?", "Images/tupac.jpg"],
@@ -25,14 +24,6 @@ let people = [
     ["Cardi B", "This artist hails from the Bronx, New York. She captured the masses on social media with her animated personality and has gone to do great things. Who is this?", "Images/cardib.jpg"],
     ["Snoop Dogg", "This artist hails from Long Beach, California and is nothing short of a legend. This artis also always has his head in the clouds. Who is this?", "Images/snoopdogg.jpg"]
 ]
-
-// Need and input box
-//player inputs selection
-//store selection value
-//  compare stored value to people[i][0]
-// if stored value =  people[0] answer = correct
-    //else answer = wrong
-
 
 
 q.innerText = people[i][0]
@@ -66,16 +57,13 @@ front.classList.toggle("hidden")
 })
 
 const answerInput = document.querySelector('.answerSelect')
-// console.log(answerInput.value)
 
 answerInput.addEventListener("submit", function(evt) {
     evt.preventDefault(); 
-    // console.log(evt.target.elements[0].value);
     let capital = (evt.target.elements[0].value).split("")
     capital[0] = capital[0].toUpperCase()
     console.log(capital)
     if (people[i][0] === capital.join("")) {
-        // alert("Correct, click pic to see answer")
         swal({
             title: "Correct!",
             text: "You answered correctly, click picture!",
@@ -85,7 +73,6 @@ answerInput.addEventListener("submit", function(evt) {
         next.classList.toggle("hidden")
     }
     else {
-        // alert("You are wrong, try again")
         swal({
             title: "Wrong",
             text: "You got it wrong, try again!",
