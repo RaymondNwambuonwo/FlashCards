@@ -10,8 +10,8 @@ You will need install a text editor in order to view the code as well as contrib
 2. [Atom Text Editor](https://atom.io/)
 3. [Visual Studio Code](https://code.visualstudio.com/) 
 
-## About Flash Cards
-The game flashcards is somewhat of a memory quiz style game. The objective of the game is to have a card with information on the front and back. On one side of the card you will have a question or something to that effect, and on the other side will be the corresponding information for the information on the other side (question on one side, answer on the other). Once the player answers correctly, the answer side of the card will reveal itself, virtually speaking since this is the computer based version.
+## About Flash Cards & My Game
+The game flashcards is somewhat of a memory quiz style game. The objective of the game is to have a card with information on the front and back. On one side of the card you will have a question or something to that effect, and on the other side will be the corresponding information for the information on the other side (question on one side, answer on the other). Once the player answers correctly, the answer side of the card will reveal itself, virtually speaking since this is the computer based version. Specifically I chose to do a music flash cards game, where you are given a descripton of the artist and have to answer correctly on who the artist is.
 
 ## Languages/Frameworks Used
 1. HTML
@@ -32,3 +32,6 @@ Thank you to:
 - Roger Campbell II for the help and motivation.
 - Blake Hearn for the help and motivation.
 - Joe Tully for the help and motivation.
+
+## Deployed Page
+**Flash Cards** - [https://raymondnwambuonwo.github.io/FlashCards/](https://raymondnwambuonwo.github.io/FlashCards/)
