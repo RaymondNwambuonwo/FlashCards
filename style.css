@@ -18,7 +18,21 @@ text-align: center;
     width: 500px;
     height: 400px;
     border: 2px solid black;
+    cursor: pointer;
+    perspective: 1000px;
 }
+
+.game-container:hover {
+    transition: all 0.2s ease-out;
+    /* box-shadow: 5px 5px 5px 5px aqua; */
+    /* top: -4px; */
+    /* border: 1px solid #cccccc; */
+    /* background-color: white; */
+    border: 10px solid #00838d;
+    box-shadow: 0px 0px 999px 999px rgba(47, 155, 182, 0.856);
+    z-index: 500;
+}
+
 
 .hidden {
     display: none;
@@ -41,6 +55,8 @@ justify-content: center;
     width: 500px;
     display: flex;
     align-items: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
 .front-face {
@@ -53,18 +69,17 @@ justify-content: center;
 justify-content: center;
 text-align: center;
 width: 100%;
+transform: rotateY(180deg);
 }
 
-.game-container:hover {
-    transition: all 0.2s ease-out;
-    /* box-shadow: 5px 5px 5px 5px aqua; */
-    /* top: -4px; */
-    /* border: 1px solid #cccccc; */
-    /* background-color: white; */
-    border: 10px solid #00838d;
-    box-shadow: 0px 0px 999px 999px rgba(47, 155, 182, 0.856);
-    z-index: 500;
+.game-container:hover .card {
+    transform: rotateY(180deg);
 }
+
+.back-face{
+    backface-visibility: hidden;
+} 
+
 
 #question {
     text-align: center;
