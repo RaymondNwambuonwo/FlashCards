@@ -1,5 +1,5 @@
 # FlashCards
-This project was based upon combining our HTML, CSS, & Javascript skills to build a game from the options we were given. I chose **Flash-Card**.
+This project was based upon combining our HTML, CSS, & Javascript skills to build a game from the options we were given. I chose the game called **Flash Cards**.
 
 ## Prerequisites 
 Thing(s) that you need to install beforehand in order to view the page.
@@ -11,7 +11,7 @@ You will need install a text editor in order to view the code as well as contrib
 3. [Visual Studio Code](https://code.visualstudio.com/) 
 
 ## About Flash Cards
-The game flashcards is somewhat of a memory quiz style game. The objective of the game is to have a card with information on the front and back. On one side of the card you
+The game flashcards is somewhat of a memory quiz style game. The objective of the game is to have a card with information on the front and back. On one side of the card you will have a question or something to that effect, and on the other side will be the corresponding information for the information on the other side (question on one side, answer on the other). Once the player answers correctly, the answer side of the card will reveal itself, virtually speaking since this is the computer based version.
 
 ## Languages/Frameworks Used
 1. HTML
@@ -21,9 +21,6 @@ The game flashcards is somewhat of a memory quiz style game. The objective of th
 ## Built With
 **[Visual Studio Code](https://code.visualstudio.com/)** 
 
-## API Used
-**[Star Wars](https://swapi.co/)**
-
 ## Contribution
 When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owner of this repository before making a change.
 
@@ -32,3 +29,5 @@ When contributing to this repository, please first discuss the change you wish t
 
 ## Acknowledgement 
 Thank you to: 
+- Roger Campbell II for the help and motivation.
+- Blake Hearn for the help and motivation.
