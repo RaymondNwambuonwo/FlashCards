@@ -4,7 +4,7 @@ body {
     background: radial-gradient(#dae2f8, #d6a4a4) /*the radial gradient allows for a blend of colors for background*/
 } 
 
-h2 {
+h2, h4 {
 text-align: center;
 }
 
@@ -76,9 +76,9 @@ transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
-.back-face{
+/* .back-face{
     backface-visibility: hidden;
-} 
+}  */
 
 
 #question {

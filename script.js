@@ -7,6 +7,8 @@ let previous = document.querySelector("#previous")
 let next = document.querySelector("#next")
 let question = document.querySelector("#question")
 let i = 0
+let score = 0
+let track = document.querySelector("h4")
 
 // front.style.background = "url(Images/tupac.jpg)"
 
@@ -42,6 +44,7 @@ next.addEventListener("click", function(evt){
     question.textContent = people[i][1]
     front.style.background = "url("+people[i][2]+") no-repeat"
     front.style.backgroundSize = "100% 100%"
+    next.classList.toggle("hidden")
 })
 
 previous.addEventListener("click", function(evt){
@@ -51,6 +54,7 @@ previous.addEventListener("click", function(evt){
     question.textContent = people[i][1]
     front.style.background = "url("+people[i][2]+") no-repeat"
     front.style.backgroundSize = "100% 100%"
+    previous.classList.toggle("hidden")
 })
 
 card.addEventListener("click", function(evt){
@@ -63,17 +67,31 @@ const answerInput = document.querySelector('.answerSelect')
 
 answerInput.addEventListener("submit", function(evt) {
     evt.preventDefault(); 
-    console.log(evt.target.elements[0].value);
+    // console.log(evt.target.elements[0].value);
+    let capital = (evt.target.elements[0].value).split("")
+    capital[0] = capital[0].toUpperCase()
+    console.log(capital)
+    if (people[i][0] === capital.join("")) {
+        // alert("Correct, click pic to see answer")
+        swal({
+            title: "Correct!",
+            text: "You answered correctly, click picture!",
+            icon: "success",
+          });
+        score++
+        next.classList.toggle("hidden")
+    }
+    else {
+        // alert("You are wrong, try again")
+        swal({
+            title: "Wrong",
+            text: "You got it wrong, try again!",
+            icon: "error",
+          });
+        score--
+    }
+    track.innerHTML = "Score: "+score.toString()
+    if (i === 0) {
+        previous.classList.toggle("hidden")
+    }
 })
-
-// function validateAnswer(evt) {
-//     evt.preventDefault
-//     let userAnswer = document.forms["rappersName"].value;
-//     if (userAnswer == people[i][1]) {
-//         alert("You are Correct!")
-//     }
-//     else (userAnswer !== people[i][1]); {
-//         alert("Maybe you should try again")
-//     }
-//     console.log(people[i][1])
-// }

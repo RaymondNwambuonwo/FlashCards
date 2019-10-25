@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Flash Cards</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <header>
     <h1>Flash Cards</h1>
       </header>
 <body>
- <h2>Music Match</h2>
+ <h2>Music Flash</h2>
+ <h4>Score</h4>
 <div class="game-container">
     <div class="card">
             <div class="back-face hidden">
@@ -26,13 +28,13 @@
     <p id="question"></p>
 </div> 
 <div class="button">
-    <button id="previous">Previous</button>
-    <button id="next">Next</button>
+    <button id="previous" class="hidden">Previous</button>
+    <button id="next" class="hidden">Next</button>
 </div>
 
 <form class="answerSelect">
         Answer:<input type="text" class="nameText">
-    <input type="submit" value="text" name='rappersName' value="" class="answerSubmit">
+    <input type="submit" value="submit" name='rappersName' value="" class="answerSubmit">
 </form>
 
 
