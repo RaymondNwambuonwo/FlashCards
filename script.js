@@ -31,6 +31,17 @@ question.textContent = people[i][1]
 front.style.background = "url("+people[i][2]+") no-repeat"
 front.style.backgroundSize = "100% 100%"
 
+previous.addEventListener("click", function(evt){
+    evt.preventDefault
+    i--
+    q.innerText = people[i][0]
+    question.textContent = people[i][1]
+    front.style.background = "url("+people[i][2]+") no-repeat"
+    front.style.backgroundSize = "100% 100%"
+    previous.classList.toggle("hidden")
+})
+
+
 next.addEventListener("click", function(evt){
     evt.preventDefault
     i++
@@ -41,15 +52,7 @@ next.addEventListener("click", function(evt){
     next.classList.toggle("hidden")
 })
 
-previous.addEventListener("click", function(evt){
-    evt.preventDefault
-    i--
-    q.innerText = people[i][0]
-    question.textContent = people[i][1]
-    front.style.background = "url("+people[i][2]+") no-repeat"
-    front.style.backgroundSize = "100% 100%"
-    previous.classList.toggle("hidden")
-})
+
 
 card.addEventListener("click", function(evt){
 back.classList.toggle("hidden")

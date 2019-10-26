@@ -4,9 +4,10 @@ body {
     background: radial-gradient(#dae2f8, #d6a4a4) 
 } 
 
-h2, h4 {
+h2, h4, h1, p {
 text-align: center;
 }
+
 
 
 .game-container {
